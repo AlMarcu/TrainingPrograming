@@ -34,7 +34,7 @@ namespace TrainingPrograming.Sesiune2
             //Console.WriteLine(" " + prenumeCursant);
             Console.WriteLine("Varsta: " + varsta);
             Console.WriteLine("CNP: " + numarLung);
-            Console.Write("Activ: " + esteActiv + " ");
+            Console.WriteLine("Activ: " + esteActiv + " ");
             Console.Write("Nota: " + nota);
                        
 
