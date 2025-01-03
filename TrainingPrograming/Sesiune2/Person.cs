@@ -39,6 +39,47 @@ namespace TrainingPrograming.Sesiune2
             Console.WriteLine("- Gender: " + gen);
             Console.WriteLine("You will be " + calculateAge + " years old in 15 years!");
         }
+        [Test]
+        public void AgeGender()
+        {
+            IsOld(65);
+            ShowGender("");
+        }
+
+        public void IsOld(int age)
+        {
+            if (age >= 100)
+            {
+                Console.WriteLine("You are ancient!");
+            }
+            else if (age >= 50)
+            {
+                Console.WriteLine("You are old!");
+            }
+            else if (age < 50)
+            {
+                Console.WriteLine("You are still young!");
+            }
+        }
+         
+        public void ShowGender(string gen)
+            {
+            switch (gen)
+            {
+                case "Male":
+                    Console.WriteLine("You are a male!");
+                    break;
+
+                case "Female":
+                    Console.WriteLine("You are a female!");
+                    break;
+
+                default:
+                Console.WriteLine("You haven't specified your gender!");
+                    break;
+
+            }
+        }
     }
  }
 
